@@ -1,0 +1,375 @@
+
+@font-face {
+  font-family: JF-Flat-regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Flat_Font_Jozoor/JF-Flat-regular.ttf");
+}
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: JF-Flat-regular, sans-serif;
+}
+body {
+  font-size: 13px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.w3-striped tbody tr:nth-child(even) {
+  background-color: #f5f5f5
+}
+.w3-input {
+  border-bottom: 3px solid #9e9e9e;
+  background: transparent;
+}
+.w3-input:focus {
+  outline: 0;
+  border-bottom: 3px solid #ef3f64;
+}
+
+/*.wrapper {
+  max-width: 800%;
+  margin: 0 auto;
+}*/
+
+.decoration-none {
+  text-decoration: none;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: block;
+}
+
+#agar_info_bar {
+  position: fixed;
+  top: -200px;
+  z-index: 4;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.lSAction > a {
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 992px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* BEGIN SLIDER */
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #2196F3; /* blue background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #2196F3; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#slider-value {
+  color: #2196F3;
+}
+
+/* END SLIDER */
+
+.link {
+  text-decoration: none;
+}
+
+#income td, #income th, #cash_out td, #cash_out th {
+  text-align: center;
+}
+
+.search-input {
+  background-color: white;
+  background-image: url('images/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+.search-form {
+
+}
+
+.new_project_btn, .new_course_btn, .new_lesson_btn {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+
+
+/* START SLIDE SHOW */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  max-height: 350px;
+  overflow-y: hidden;
+}
+
+.mySlides img {
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: right;
+  width: 12.5%;
+  max-height: 150px;
+  overflow-y: hidden;
+}
+.column img {
+  height: 100px;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* END SLIDE SHOW */
+
+.thumbnail {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.item ul{
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0;
+}
+.demo .item{
+  margin-bottom: 60px;
+}
+.content-slider li{
+  background-color: #ed3020;
+  text-align: center;
+  color: #FFF;
+}
+.content-slider h3 {
+  margin: 0;
+  padding: 70px 0;
+}
+.demo{
+  width: 100%;
+}
+
+.w3-btn, .w3-button{
+  padding: 5px;
+  }
+
+.w3-flat-pomegranate {
+    color:#fff;
+background-color: #ef3f64;
+}
+.w3-brnda-c{
+    background-color: #ef3f64;
+    color:#fff;
+}
+.w3-brnda-text{
+    color:#ef3f64;
+}
+brnda-padding{
+    padding: 16px 19px !important;
+}
+.brnda-delete{
+    border: 1px solid #ef3f64;
+    color:#ef3f64;
+}
+.calendar-brnda{
+    padding: 5px;
+}
+.brnda-basic{
+    border: 1px solid #ccc;
+}
+.brnda-card{
+    box-shadow: 0 1px 3px 0 rgba(19, 19, 19, 0.23), 0 1px 8px 0 rgba(0, 0, 0, 0.17);
+}
+a{
+text-decoration: none;
+}
+#addNewAgar:hover {
+  cursor: pointer;
+}
+
+
+
+/* home page*/
+.home-search-model{
+  width:65%
+}
+@media screen and (max-width: 574px){
+  .home-search-model{
+    width: 80%;
+  }
+}
+
+.about_brnda_icons{
+  border-radius: 50%;
+  border: 1px solid #757575;
+  padding: 15px;
+}
+
+
+/* home page */
+
+.home_header{
+  margin-top: -95px;
+  background-image: url('../images/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 99;height: 550px!important
+}
+.inner_content{
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  height: 550px!important;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-light .navbar-toggler {
+    color: #fff!important;
+    border-color:#fff;
+    }
+  .home-nav{
+    width: 100%;
+    background-color: #fff;
+  }
+  .home-nav ul{
+    padding: 25px;
+    float: right;
+    text-align: right
+  }
+  .home-nav ul li{
+    1border-bottom: 1px solid #f1f1f1
+  }
+  .home-nav ul li a{
+    color: #000!important;
+  }
+}
+
+
+/* home oage contact form */
+.contact-form{
+  margin-top: 100px;
+}

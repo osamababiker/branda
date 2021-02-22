@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: JF-Flat-regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Flat_Font_Jozoor/JF-Flat-regular.ttf");
+  }
+  html,body,h1,h2,h3,h4,h5,h6,p,span {
+    font-family: JF-Flat-regular, sans-serif;
+  }
